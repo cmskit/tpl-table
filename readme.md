@@ -6,16 +6,18 @@ Installation path: backend/templates/table
 
 **attention: alpha status**
 
-This -partly[^1] generalized- Template shows your Entries as a searchable, sortable, paginated Table allowing a faster access than the default Template. Connected Entries are loaded as expandable Sub-Table (of course also sortable).
+This -partly generalized- template shows entries as a searchable, sortable, paginated table allowing a faster access than the default template.
+Connected entries are loaded as expandable sub-table (of course also sortable).
 
-[^1]: this Template does not show generic Fields because of their nature (every Entry can have a different Structure witch dosen't fit into a "Table").
+This template does not show generic fields because of their nature
+(every entry can have a different structure witch dosen't fit into a "table").
 
 It is based on (and needs to run) the jQuery-Plugin jTable <http://www.jtable.org>
 
 ToDo:
 
-* add Filter for updateContent
-* cut long Lines (Text-Areas) and replace other -non-textual content
+* add filter for updateContent
+* cut long lines (text-areas) and replace other -non-textual content
 * Documentation
 * more inline-documentation
 * fix som css-glitches
