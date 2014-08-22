@@ -38,11 +38,11 @@
 ?>
 
 <link rel="icon" type="image/png" href="inc/css/icon.png" />
-<link rel="stylesheet" type="text/css" id="mainTheme" href="../vendor/cmskit/lib-jquery-ui/themes/<?php echo end($_SESSION[$projectName]['settings']['interface']['theme'])?>/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" id="mainTheme" href="../vendor/cmskit/jquery-ui/themes/<?php echo end($_SESSION[$projectName]['settings']['interface']['theme'])?>/jquery-ui.css" />
 <link rel="stylesheet" type="text/css" id="baseTheme" href="templates/table/jquerytable/css/jqueryui/jtable_jqueryui.css" />
 
-<script src="../vendor/cmskit/lib-jquery-ui/jquery.min.js"></script>
-<script src="../vendor/cmskit/lib-jquery-ui/jquery-ui.js"></script>
+<script src="../vendor/cmskit/jquery-ui/jquery.min.js"></script>
+<script src="../vendor/cmskit/jquery-ui/jquery-ui.js"></script>
 <script src="templates/table/jquerytable/jquery.jtable.js" ></script>
 <script src="templates/table/jquerytable/jquery.jtable.search.js" ></script>
 <script src="templates/table/jquerytable/localization/jquery.jtable.<?php echo $lang?>.js"></script>
