@@ -42,7 +42,7 @@
 <link rel="stylesheet" type="text/css" id="baseTheme" href="templates/table/jquerytable/css/jqueryui/jtable_jqueryui.css" />
 
 <script src="../vendor/cmskit/jquery-ui/jquery.min.js"></script>
-<script src="../vendor/cmskit/jquery-ui/jquery-ui.js"></script>
+<script src="../vendor/cmskit/jquery-ui/jquery-ui.min.js"></script>
 <script src="templates/table/jquerytable/jquery.jtable.js" ></script>
 <script src="templates/table/jquerytable/jquery.jtable.search.js" ></script>
 <script src="templates/table/jquerytable/localization/jquery.jtable.<?php echo $lang?>.js"></script>
