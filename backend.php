@@ -19,7 +19,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
 
 <?php
-	
+
+include dirname(__DIR__) . '/default/buildDropdowns.php';
+
 	echo '
 <script>
 	var projectName = "'.$projectName.'",
@@ -80,10 +82,10 @@ body{
 		// draw Logo if available
 		if (file_exists($projectPath.'/objects/logo.png'))
 		{
-			echo '<img id="logo" style="height:27px;float:left;margin:0 10px 0 0;" src="'.$projectPath.'/objects/logo.png" />';
+			echo '<img id="logo" style="height:27px;float:left;margin:0 10px 0 0;" src="../projects/'.$projectName.'/objects/logo.png" />';
 		}
 
-
+        $dropdowns = buildDropdowns($projectName, $objectName, $user_wizards);
         // draw Object-Selector
         echo $dropdowns['objectSelect'];
 
@@ -136,9 +138,11 @@ body{
 			}
 			
 			// detect Select-Fields & prepare their Options
-			if (isset($v['add']['wizard']) && isset($v['add']['option']) && $v['add']['wizard']=='select')
+
+			if (isset($v['add']['wizard']) && is_string($v['add']['option']) && $v['add']['wizard']=='select')
 			{
-				$ol = explode('|', $v['add']['option']);
+                print_r($v['add']['option']);
+                $ol = explode('|', $v['add']['option']);
 				$a['options'] = array();
 				foreach($ol as $o)
 				{ 
